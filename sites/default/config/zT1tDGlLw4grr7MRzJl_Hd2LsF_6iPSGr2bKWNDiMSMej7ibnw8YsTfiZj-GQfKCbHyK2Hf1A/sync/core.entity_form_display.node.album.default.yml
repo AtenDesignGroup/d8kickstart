@@ -6,6 +6,7 @@ dependencies:
     - field.field.node.album.field_artist
     - field.field.node.album.field_artwork
     - field.field.node.album.field_release_date
+    - field.field.node.album.field_role
     - field.field.node.album.field_songs
     - field.field.node.album.field_test
     - image.style.thumbnail
@@ -39,6 +40,14 @@ content:
     settings: {  }
     third_party_settings: {  }
     type: datetime_default
+  field_role:
+    weight: 27
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
   field_songs:
     weight: 4
     settings:

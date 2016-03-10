@@ -4,8 +4,10 @@ status: true
 dependencies:
   config:
     - field.field.node.artist.body
+    - field.field.node.artist.field_website
     - node.type.artist
   module:
+    - link
     - text
     - user
 id: node.artist.default
@@ -19,6 +21,17 @@ content:
     weight: 101
     settings: {  }
     third_party_settings: {  }
+  field_website:
+    weight: 102
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
   links:
     weight: 100
 hidden: {  }
