@@ -1,0 +1,27 @@
+uuid: 82855eb0-8de0-4c6f-a100-cca9945694be
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_mp3
+    - node.type.song
+  module:
+    - file
+id: node.song.field_mp3
+field_name: field_mp3
+entity_type: node
+bundle: song
+label: MP3
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: song
+  file_extensions: mp3
+  max_filesize: ''
+  description_field: false
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: file

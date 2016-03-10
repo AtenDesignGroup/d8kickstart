@@ -1,0 +1,24 @@
+uuid: 659a1f9b-e8ee-4093-a718-240feed4bfdb
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.song.field_mp3
+    - node.type.song
+  module:
+    - file
+    - user
+id: node.song.default
+targetEntityType: node
+bundle: song
+mode: default
+content:
+  field_mp3:
+    weight: 102
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: file_default
+  links:
+    weight: 100
+hidden: {  }

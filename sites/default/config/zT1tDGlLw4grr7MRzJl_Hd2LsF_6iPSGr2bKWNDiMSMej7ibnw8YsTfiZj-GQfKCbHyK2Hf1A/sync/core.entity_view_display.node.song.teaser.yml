@@ -1,0 +1,19 @@
+uuid: fc422c48-2f70-4cc1-8900-d31fba617a1f
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.song.field_mp3
+    - node.type.song
+  module:
+    - user
+id: node.song.teaser
+targetEntityType: node
+bundle: song
+mode: teaser
+content:
+  links:
+    weight: 100
+hidden:
+  field_mp3: true
