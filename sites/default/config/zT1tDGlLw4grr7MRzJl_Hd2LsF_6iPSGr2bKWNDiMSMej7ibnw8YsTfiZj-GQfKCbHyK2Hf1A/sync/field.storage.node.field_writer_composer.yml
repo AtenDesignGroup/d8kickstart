@@ -1,0 +1,21 @@
+uuid: 57832723-a2b5-4dd5-a14f-793df2d46ce3
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_writer_composer
+field_name: field_writer_composer
+entity_type: node
+type: string
+settings:
+  max_length: 255
+  is_ascii: false
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,19 @@
+uuid: f7b7c65a-5f5b-445e-8900-d389d3197575
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_writer_composer
+    - node.type.song
+id: node.song.field_writer_composer
+field_name: field_writer_composer
+entity_type: node
+bundle: song
+label: 'Writer / Composer'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

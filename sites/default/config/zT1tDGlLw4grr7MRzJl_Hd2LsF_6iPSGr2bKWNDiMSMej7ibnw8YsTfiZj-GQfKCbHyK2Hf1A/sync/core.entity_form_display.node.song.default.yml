@@ -3,7 +3,9 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.field.node.song.field_length
     - field.field.node.song.field_mp3
+    - field.field.node.song.field_writer_composer
     - node.type.song
   module:
     - file
@@ -12,12 +14,26 @@ targetEntityType: node
 bundle: song
 mode: default
 content:
+  field_length:
+    weight: 26
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
   field_mp3:
     weight: 1
     settings:
       progress_indicator: throbber
     third_party_settings: {  }
     type: file_generic
+  field_writer_composer:
+    weight: 27
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
   title:
     type: string_textfield
     weight: 0
