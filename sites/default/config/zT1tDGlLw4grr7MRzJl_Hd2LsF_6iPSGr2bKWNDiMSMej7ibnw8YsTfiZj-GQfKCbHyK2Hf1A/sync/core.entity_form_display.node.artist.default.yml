@@ -4,11 +4,14 @@ status: true
 dependencies:
   config:
     - field.field.node.artist.body
+    - field.field.node.artist.field_booking_email
+    - field.field.node.artist.field_booking_phone_number
     - field.field.node.artist.field_website
     - node.type.artist
   module:
     - link
     - path
+    - telephone
     - text
 id: node.artist.default
 targetEntityType: node
@@ -28,6 +31,19 @@ content:
     weight: 10
     settings: {  }
     third_party_settings: {  }
+  field_booking_email:
+    weight: 33
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: email_default
+  field_booking_phone_number:
+    weight: 34
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    type: telephone_default
   field_website:
     weight: 32
     settings:

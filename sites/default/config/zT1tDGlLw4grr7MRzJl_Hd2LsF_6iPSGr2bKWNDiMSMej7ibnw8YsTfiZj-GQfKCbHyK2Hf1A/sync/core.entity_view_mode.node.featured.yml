@@ -1,10 +1,10 @@
-uuid: cbbc7749-d210-4711-845b-91ee8cd8fb38
+uuid: 03043b00-b8a7-42ad-9700-afc73b5100ac
 langcode: en
 status: true
 dependencies:
   module:
     - node
-id: node.simple
-label: simple
+id: node.featured
+label: Featured
 targetEntityType: node
 cache: true

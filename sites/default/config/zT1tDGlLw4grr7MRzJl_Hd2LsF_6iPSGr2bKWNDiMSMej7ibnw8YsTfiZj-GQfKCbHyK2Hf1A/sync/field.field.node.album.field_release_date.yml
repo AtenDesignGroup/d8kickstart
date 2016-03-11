@@ -1,0 +1,21 @@
+uuid: 54ef6bb9-5dcb-4641-8007-7b3e68141a0e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_release_date
+    - node.type.album
+  module:
+    - datetime
+id: node.album.field_release_date
+field_name: field_release_date
+entity_type: node
+bundle: album
+label: 'Release Date'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

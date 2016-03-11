@@ -5,6 +5,9 @@ dependencies:
   config:
     - core.entity_view_mode.node.teaser
     - field.field.node.artist.body
+    - field.field.node.artist.field_booking_email
+    - field.field.node.artist.field_booking_phone_number
+    - field.field.node.artist.field_website
     - node.type.artist
   module:
     - text
@@ -23,4 +26,7 @@ content:
     third_party_settings: {  }
   links:
     weight: 100
-hidden: {  }
+hidden:
+  field_booking_email: true
+  field_booking_phone_number: true
+  field_website: true

@@ -5,9 +5,11 @@ dependencies:
   config:
     - field.field.node.album.field_artist
     - field.field.node.album.field_artwork
+    - field.field.node.album.field_release_date
     - field.field.node.album.field_songs
     - node.type.album
   module:
+    - datetime
     - image
     - user
 id: node.album.default
@@ -30,6 +32,14 @@ content:
       image_link: ''
     third_party_settings: {  }
     type: image
+  field_release_date:
+    weight: 105
+    label: above
+    settings:
+      format_type: medium
+      timezone_override: ''
+    third_party_settings: {  }
+    type: datetime_default
   field_songs:
     weight: 104
     label: above

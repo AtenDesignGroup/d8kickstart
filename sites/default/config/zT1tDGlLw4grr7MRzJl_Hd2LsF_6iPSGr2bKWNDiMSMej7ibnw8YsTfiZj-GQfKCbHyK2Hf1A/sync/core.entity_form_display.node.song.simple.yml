@@ -1,0 +1,38 @@
+uuid: c7a20287-cbc0-482b-9200-ece1cb4ea914
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_form_mode.node.simple
+    - field.field.node.song.field_length
+    - field.field.node.song.field_mp3
+    - field.field.node.song.field_writer_composer
+    - node.type.song
+  module:
+    - file
+id: node.song.simple
+targetEntityType: node
+bundle: song
+mode: simple
+content:
+  field_mp3:
+    weight: 1
+    settings:
+      progress_indicator: throbber
+    third_party_settings: {  }
+    type: file_generic
+  title:
+    type: string_textfield
+    weight: 0
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  field_length: true
+  field_writer_composer: true
+  path: true
+  promote: true
+  sticky: true
+  uid: true

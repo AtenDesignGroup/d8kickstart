@@ -1,0 +1,19 @@
+uuid: 1fab7105-1ca3-4e4a-ab00-e9ac1a55bcce
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_booking_email
+    - node.type.artist
+id: node.artist.field_booking_email
+field_name: field_booking_email
+entity_type: node
+bundle: artist
+label: 'Booking Email'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: email
